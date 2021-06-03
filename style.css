@@ -1,0 +1,56 @@
+body{
+    display:flex;
+    margin:0;
+    height: 100vh;
+}
+
+aside{
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+div{
+    margin-top: auto;
+    height: 300px;
+}
+
+main{
+    flex:1;
+}
+
+footer{
+    display: none;
+}
+
+@media screen and (max-width:1000px){
+    body{
+        height: 1500px;
+        flex-direction: column;
+    }
+    main{
+        flex:1;
+    }
+    footer{
+        display:block;
+        margin-bottom:24px;
+    }
+    aside{
+        position:fixed;
+        bottom:0;
+        width:100%;
+    }
+    ul{
+        display:flex;
+    }
+    li{
+        flex:1;
+    }
+    div{
+        display:none;
+    }
+}
